@@ -1,0 +1,14 @@
+package view.controller;
+
+import java.sql.SQLException;
+
+import view.model.Medico;
+
+public interface IMedicoController {
+	
+	public void inserirMedico(Medico m) throws ClassNotFoundException, SQLException;
+	public void atualizarMedico(Medico m) throws ClassNotFoundException, SQLException;
+	public void excluirMedico(Medico m) throws ClassNotFoundException, SQLException;
+	public void buscaMedico(Medico m) throws ClassNotFoundException, SQLException;
+	public void listarMedicos() throws ClassNotFoundException, SQLException;
+}
